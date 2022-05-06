@@ -182,3 +182,24 @@ img{
 .button__fourth{
     background-color: var(--redColor);
 }
+.button__orange{
+    background-color: var(--orangeColor);
+}
+/** Portfolio **/
+@media (min-width: 768px){
+    .portfolio{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+.portfolio__label{
+    font-weight: 700;
+}
+.portfolio__mod{
+    font-style: italic;
+    font-weight: 400;
+}
+.portfolio__description{
+    font-size: 1.8rem;
+}
