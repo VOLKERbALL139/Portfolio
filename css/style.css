@@ -6,6 +6,7 @@
     --blueColora:rgb( 58, 155, 227 );
     --redColor:rgb(255, 0, 0);
     --orangeColor: rgb(241, 144, 20);
+    --yellowColor:rgb(225, 243, 9);
     --whiteColor: rgb(250, 250, 250);
     --purpleColor: rgb( 145, 10, 158);
     --blackColor: rgb(0, 0, 0);
@@ -126,7 +127,11 @@ img{
     color: var(--whiteColor);
 }
 .navegation__link-act{
-    color:var(--orangeColor)
+    color:var(--orangeColor);
+}
+.navegation__link:hover{
+    color: var(--yellowColor);
+    transition: .2s;
 }
 /** About me**/
 @media (min-width: 768px){
@@ -159,6 +164,10 @@ img{
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+}
+.button:hover{
+    font-size: 2rem;
+    transition: .2s;
 }
 @media (min-width: 768px){
     .button{
