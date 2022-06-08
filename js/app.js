@@ -9,13 +9,16 @@ function appStart(){
 function navFija(){
     const headerMenu = document.querySelector('.header__menu');
     const headerImg = document.querySelector('.header__img');
+    const fijoBody = document.querySelector('body');
 
     window.addEventListener('scroll', function(){
         if(headerImg.getBoundingClientRect().top < 0){
             headerMenu.classList.add('fijo');
+            fijoBody.classList.add('fijo-body');
         }
         else{
             headerMenu.classList.remove('fijo');
+            fijoBody.classList.remove('fijo-body');
         }
     });
 }

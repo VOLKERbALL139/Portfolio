@@ -74,6 +74,9 @@ img{
         width: 100%;
         top: 0;
     }
+    .fijo-body{
+        margin-top: 8rem;
+    }
 }
 /**
 .modal__container.act{
@@ -104,19 +107,24 @@ img{
 /** Header **/
 .header{
     background-image: url(../img/unam-islas.jpeg);
-    height: 50rem;
+    height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .header__main{
     background-color: var(--blackColorTransparency);
-    height: 50rem;
+    height: 40rem;
 }
 @media (min-width: 768px){
     .header__text{
         margin-top: 15rem;
     }
+}
+.header__cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .header__text{
     text-align: center;
@@ -134,7 +142,6 @@ img{
         align-items: center;
     }
 }
-
 .logo{
     color: var(--whiteColor);
 }
